@@ -47,22 +47,21 @@ Rather than mixing more data sources, this approach prioritizes data integrity a
 ## 📁 Repository Structure
 ```
 .
-├── README.md
-├── LICENSE
-├── requirements.txt
-│
+├── data/
+│   ├── processed/
+│   │   └──company_financials.csv (generated output - NOT in repo)
+│   ├── raw/                  # Cached raw API responses generated through data pipeline
+│   └── valid_symbols.txt     # List of verified free-tier symbols
 ├── src/
-│   ├── main.py               # Entry point: runs the pipeline
+│   ├── __init__.py
 │   ├── extract.py            # API fetching + caching
+│   ├── main.py               # Runs the pipeline
 │   └── transform.py          # Data transformation and data set builder
 │
-└── data/
-    ├── processed/
-    │   └──company_financials.csv (generated output - NOT in repo)
-    ├── valid_symbols.txt     # List of verified free-tier symbols
-    └── raw/                  # Cached raw API responses
-
-
+├── .gitignore
+├── LICENSE
+├── README.md
+└── requirements.txt
 
 ```
 
