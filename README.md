@@ -14,8 +14,8 @@ https://financialmodelingprep.com/
 The FMP API is publicly accessible and provides among other data the company profile and financial statement data through a free access tier. A valid API key is required, which can be obtained by signing up for a free account.
 
 Note on Data Availability:
-Note: This repository contains only the ETL pipeline code. No Financial Modeling Prep data is included or redistributed in compliance with FMP licensing terms. To run the pipeline, users must 
-provide their own API key via a local .env file.
+
+This repository contains only the ETL pipeline code. No Financial Modeling Prep data is included or redistributed in compliance with FMP licensing terms. To run the pipeline, users must provide their own API key via a local .env file.
 
 ## 🎯 Project Requirements
 
